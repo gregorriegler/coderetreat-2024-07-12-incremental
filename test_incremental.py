@@ -7,11 +7,7 @@ def replace_nines(input_list):
             result.append(num)
     return result
 
-# Example usage:
-input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-output_list = replace_nines(input_list)
-print(output_list)
-
-
-def test_bla():
-    assert False
+def test_replace_nines():
+    input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    expected_output = [1, 2, 3, 4, 5, 6, 7, 8, 10, 10, 10]
+    assert replace_nines(input_list) == expected_output
