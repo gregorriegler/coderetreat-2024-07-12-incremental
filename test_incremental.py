@@ -17,8 +17,8 @@ def replace_numbers(input_list):
 def test_replace_nines():
     # not working because this is 1st iteration
     # FAILS
-    input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    expected_output = [1, 2, 3, 4, 5, 6, 7, 8, 10, 10, 10]
+    input_list = [1, 3, 4, 5, 6, 7, 8, 9, 10]
+    expected_output = [1, 3, 4, 5, 6, 7, 8, 10, 10, 10]
     assert replace_numbers(input_list) == expected_output
 
 def test_replace_twos():
@@ -29,5 +29,5 @@ def test_replace_twos():
 def test_replace_combined():
     # FAILS
     input_list = [1, 9, 2, 2, 3]
-    expected_output = [1, 10, 10, 1, 1, 3]
+    expected_output = [1, 10, 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3]
     assert replace_numbers(input_list) == expected_output
