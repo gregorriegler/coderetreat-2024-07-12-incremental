@@ -39,3 +39,10 @@ def test_replace_sixes():
     input_list = [1, 6, 3, 4, 5]
     expected_output = [1, 3, 3, 3, 3, 4, 5]
     assert replace_numbers(input_list) == expected_output
+
+
+def test_with_2_at_the_beginning():
+    input_list = [2, 5, 6, 3, 9]
+    expected_output = [5, 3, 10, 10]  # Correct expected output
+    assert replace_numbers(input_list) == expected_output
+
